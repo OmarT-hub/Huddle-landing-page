@@ -1,3 +1,15 @@
+/* 
+Mobile Verion : done
+
+Table Version : no
+
+Desktop Versio : no
+
+
+
+
+*/
+
 :root {
     --Purple-700: hsl(257, 40%, 49%);
     --Magenta-400: hsl(300, 69%, 71%);
@@ -15,7 +27,7 @@ body {
     background-color: var(--Purple-700);
     background-image: url(/images/bg-mobile.svg);
     background-repeat: no-repeat;
-    padding: 19px;
+    padding: 6vw;
 
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -38,7 +50,7 @@ body {
 }
 
 
-.headers{
+.headers {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,10 +89,12 @@ p {
 
 
 
-button{
+
+button {
     all: unset;
 
-    display: flex;justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 
 
@@ -91,13 +105,19 @@ button{
     height: 12vw;
     border-radius: 30vw;
 
-    box-shadow: 0 6px 50px 1px rgba(0, 0, 0, 0.241);
+    box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.241);
 
     font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--Magenta-400);
+    color: white;
 }
 
 
-.links{
+.links {
     width: 100%;
 
 
@@ -109,20 +129,31 @@ button{
 }
 
 
-.links img{
+.links img {
     width: 5vw;
-    color: red;
+    filter: brightness(0) invert(1);
+
 }
-a{
-    border:1px solid rgb(0, 0, 0);
-    width: 8vw;
-    height: 8vw;
+
+a {
+    border: 1px solid rgb(255, 255, 255);
+    width: 8.5vw;
+    height: 8.5vw;
 
     border-radius: 50%;
-
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
+
 }
 
+a:hover {
+    border: 1px solid var(--Magenta-400);
+}
+
+a:hover>img {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(20%) saturate(3115%) hue-rotate(284deg) brightness(99%) contrast(90%);
+}
