@@ -45,7 +45,8 @@ body {
     align-items: center;
 
 
-    gap: 40px;
+    /* gap: 40px; */
+    gap: 12vw;
 
 }
 
@@ -54,7 +55,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
+    gap: 6vw;
+
+    font-family: "Poppins", sans-serif !important;
+
 }
 
 
@@ -109,6 +114,8 @@ button {
 
     font-family: "Poppins", sans-serif;
     cursor: pointer;
+
+    transition: 0.3s all;
 }
 
 button:hover {
@@ -123,7 +130,7 @@ button:hover {
 
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 2vw;
 
 
 }
@@ -148,12 +155,122 @@ a {
 
     cursor: pointer;
 
+    transition: all 0.3s;
 }
 
 a:hover {
     border: 1px solid var(--Magenta-400);
+
 }
 
 a:hover>img {
     filter: brightness(0) saturate(100%) invert(87%) sepia(20%) saturate(3115%) hue-rotate(284deg) brightness(99%) contrast(90%);
+}
+
+@media (min-width:1024px) {
+    * {
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(/images/bg-desktop.svg);
+        height: 100vh;
+
+        padding: 40px 60px;
+        display: grid;
+        grid-template-columns: auto auto auto repeat(2, 1fr);
+        grid-template-rows: auto 50px 65px 1fr 90px auto;
+        grid-template-areas: "logo . .  . ."
+            ". . . . . "
+            "pic pic pic . ."
+            "pic pic pic  head head"
+            "pic pic pic . ."
+            ". . . .  link";
+
+
+        gap: 0px;
+        column-gap: 45px;
+
+    }
+
+    /* ======================== */
+    .logo {
+        grid-area: logo;
+        width: 200px;
+
+    }
+
+    .img-cont {
+        grid-area: pic;
+    }
+
+    .headers {
+        grid-area: head;
+
+    }
+
+    .links {
+        grid-area: link;
+    }
+
+    /* ============================================ */
+    .logo,
+    .headers,
+    .img-cont,
+    .links {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .img-cont {
+        width: 47vw;
+    }
+
+    .headers {
+        font-size: medium;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .headers h2 {
+        margin-bottom: 10px !important;
+        font-size: 40px;
+        text-align: unset;
+        width: 80%;
+
+    }
+
+    .headers p {
+        text-align: unset;
+        width: 81%;
+    }
+
+    .headers button {
+        width: 180px;
+        height: 45px;
+    }
+
+
+    .links {
+        /* border: 2px solid red; */
+        gap: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .links a {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .links a img {
+        width: 1.2vw;
+    }
+
+
+
 }
