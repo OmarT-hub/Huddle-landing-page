@@ -174,13 +174,20 @@ a:hover>img {
     }
 
     body {
-        background-image: url(images/bg-desktop.svg);
+        background-image: url(../images/bg-desktop.svg);
         height: 100vh;
 
-        padding: 40px 60px;
+        /* padding: 40px 60px; */
+        /* padding: 2.8vw 4.2vw ; */
+        padding: 4vh 4.2vw;
+
+
         display: grid;
-        grid-template-columns: auto auto auto repeat(2, 1fr);
-        grid-template-rows: auto 50px 65px 1fr 90px auto;
+        /* grid-template-columns: auto auto auto repeat(1, 1fr) auto; */
+        grid-template-columns: auto auto auto repeat(1, 1fr) 15vw;
+        /* grid-template-rows: auto 50px 65px 1fr 90px auto; */
+        grid-template-rows: auto 3.5vw 4.55vw 1fr 6.3vw auto;
+        grid-template-rows: auto 6vh 11vh 1fr 6.3vh auto;
         grid-template-areas: "logo . .  . ."
             ". . . . . "
             "pic pic pic . ."
@@ -190,14 +197,16 @@ a:hover>img {
 
 
         gap: 0px;
-        column-gap: 45px;
+        /* column-gap: 45px; */
+        column-gap: 3.1vw;
 
     }
 
     /* ======================== */
     .logo {
         grid-area: logo;
-        width: 200px;
+        /* width: 200px; */
+        width: 14vw;
 
     }
 
@@ -232,12 +241,15 @@ a:hover>img {
         height: 100%;
         display: flex;
         align-items: flex-start;
-        gap: 20px;
+        /* gap: 20px; */
+        gap: 3vh;
     }
 
     .headers h2 {
-        margin-bottom: 10px !important;
-        font-size: 40px;
+        /* margin-bottom: 10px !important; */
+        margin-bottom: 1.5vh !important;
+        /* font-size: 40px; */
+        font-size: 2.79vw;
         text-align: unset;
         width: 80%;
 
@@ -246,19 +258,29 @@ a:hover>img {
     .headers p {
         text-align: unset;
         width: 81%;
+
+        font-size: 1.11vw;
+
     }
 
     .headers button {
-        width: 180px;
-        height: 45px;
+        /* width: 180px; */
+        width: 12.8vw;
+
+        /* height: 45px; */
+        height: 3vw;
+
+        font-size: 1.12vw;
     }
 
 
     .links {
         /* border: 2px solid red; */
-        gap: 10px;
+        /* gap: 10px; */
+        gap: 0.8vw;
         display: flex;
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
+        justify-content: center;
     }
 
 
@@ -270,6 +292,9 @@ a:hover>img {
     .links a img {
         width: 1.2vw;
     }
+
+
+
 
 
 
