@@ -6,16 +6,14 @@ Table Version : no
 Desktop Versio : no
 
 
-
-
 */
 
 :root {
     --Purple-700: hsl(257, 40%, 49%);
     --Magenta-400: hsl(300, 69%, 71%);
-
-
 }
+
+
 
 * {
     margin: 0;
@@ -165,6 +163,11 @@ a:hover {
 
 a:hover>img {
     filter: brightness(0) saturate(100%) invert(87%) sepia(20%) saturate(3115%) hue-rotate(284deg) brightness(99%) contrast(90%);
+}
+
+
+::selection{
+    background-color:var(--Magenta-400);
 }
 
 @media (min-width:1024px) {
