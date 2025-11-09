@@ -38,3 +38,9 @@ npm-debug.log*
 *.pem
 .DS_Store
 Thumbs.db
+
+#unnecessary files
+*.md
+!README.md
+preview.jpg
+
