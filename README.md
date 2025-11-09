@@ -29,7 +29,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](/assets/screenshots/IMG_٢٠٢٥١١٠٩_١٥٢٤١٨.jpg)
+<img width="375" src="/assets/screenshots/IMG_٢٠٢٥١١٠٩_١٥٢٤١٨.jpg" alt="image" />
+
+![]()
 ![](/assets/screenshots/Screenshot%202025-11-09%20150744.png)
 
 ### Links
